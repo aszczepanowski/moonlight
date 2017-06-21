@@ -1,0 +1,54 @@
+// main: ../style.scss
+.bg-white {
+  background: $white;
+}
+.bg-violet {
+  background: $projectViolet2;
+  color: $white;
+}
+.bg-lightviolet {
+  background: $projectViolet3;
+  color: $white;
+}
+.bg-rose {
+  background: $projectRose1;
+  color: $white;
+}
+.bg-lightrose {
+  background: $projectRose2;
+  color: $white;
+}
+.bg-coral {
+  background: $projectCoral1;
+}
+.bg-lightcoral {
+  background: $projectCoral2;
+}
+.p-30 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  @media #{$break-md-max} {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+.p-60 {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  @media #{$break-md-max} {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.text-justify {
+  text-align: justify;
+}

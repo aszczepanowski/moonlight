@@ -1,0 +1,14 @@
+// main: ../style.scss
+html {
+  background: $whitesmoke;
+}
+
+body {
+  background: $white;
+  color: $black;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@include selection($projectViolet1);

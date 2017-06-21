@@ -1,0 +1,13 @@
+// main: ../style.scss
+$break-xxs:     "(max-width: 359px)";
+$break-xs:      "(max-width: map-get($grid-breakpoints, sm) - 1)";
+$break-sm-min:  "(min-width: map-get($grid-breakpoints, sm))";
+$break-sm-max:  "(max-width: map-get($grid-breakpoints, md) - 1)";
+$break-sm:      $break-sm-min "and" $break-sm-max;
+$break-md-min:  "(min-width: map-get($grid-breakpoints, md))";
+$break-md-max:  "(max-width: map-get($grid-breakpoints, lg) - 1)";
+$break-md:      $break-md-min "and" $break-md-max;
+$break-lg-min:  "(min-width: map-get($grid-breakpoints, lg))";
+$break-lg-max:  "(max-width: map-get($grid-breakpoints, xl) - 1)";
+$break-lg:      $break-lg-min "and" $break-lg-max;
+$break-xl:      "(min-width: map-get($grid-breakpoints, xl))";

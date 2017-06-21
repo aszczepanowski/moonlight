@@ -1,0 +1,73 @@
+// main: ../style.scss
+button {
+  font: inherit;
+  &:focus {
+    outline: 0;
+  }
+}
+
+
+.btn {
+  @include position;
+  display: inline-block;
+  background: $projectRose1;
+  border: 0;
+  color: $white;
+  font-size: 20px;
+  text-align: center;
+  padding: 8px 40px;
+  cursor: pointer;
+  @include transition(background 0.25s ease);
+  @include border-radius(3px);
+  &:disabled {
+    pointer-events: none;
+    @include opacity(0.25);
+  }
+  &:hover {
+    background: darken($projectRose1,10%);
+  }
+  &--violet {
+    background: $projectViolet1;
+    &:hover {
+      background: darken($projectViolet1,10%);
+    }
+  }
+  &--book {
+    padding: 8px 20px;
+    &:after {
+      content: '';
+      @include position(relative,-2px null null null);
+      display: inline-block;
+      vertical-align: middle;
+      background: transparent url('../images/icons/book.svg') center center no-repeat;
+      width: 22px;
+      height: 22px;
+      margin-left: 10px;
+    }
+  }
+  @media #{$break-md-max} {
+    font-size: 18px;
+    padding: 6px 20px;
+    &--book {
+      &:after {
+        width: 18px;
+        height: 18px;
+        background-size: 18px 18px;
+        margin-left: 8px;
+      }
+    }
+  }
+}
+.btn-wrapper {
+  margin-top: 20px;
+  .btn {
+    margin-top: $grid-gutter-width-base / 2;
+    margin-bottom: $grid-gutter-width-base / 2;
+  }
+  .btn-col {
+    .btn {
+      display: block;
+      width: 100%;
+    }
+  }
+}

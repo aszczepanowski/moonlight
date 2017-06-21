@@ -1,0 +1,43 @@
+// main: ../style.scss
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  background: transparent url('../images/icons/default.svg') center center no-repeat;
+  background-size: 100% 100%;
+  &.icon--twitter {
+    background-image: url('../images/icons/twitter.svg');
+    width: 36px;
+  }
+  &.icon--instagram {
+    background-image: url('../images/icons/instagram.svg');
+  }
+  &.icon--facebook {
+    background-image: url('../images/icons/facebook.svg');
+  }
+  &.icon--prev {
+    background-image: url('../images/icons/prev.svg');
+    width: 14px;
+    height: 26px;
+  }
+  &.icon--next {
+    background-image: url('../images/icons/next.svg');
+    width: 14px;
+    height: 26px;
+  }
+  &.icon--book {
+    background-image: url('../images/icons/book.svg');
+    width: 22px;
+    height: 22px;
+  }
+  &.icon--closed-summer {
+    width: 144px;
+    height: 170px;
+    background-image: url('../images/icons/closed-summer.svg');
+    @media #{$break-md-max} {
+      width: 72px;
+      height: 85px;
+    }
+  }
+}
